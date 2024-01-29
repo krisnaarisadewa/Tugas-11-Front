@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Slider & Modal</title>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slide" id="slide1">
+            <img src="img/img1.png" alt="Slide 1">
+        </div>
+        <div class="slide" id="slide2">
+            <img src="img/img2.png" alt="Slide 2">
+        </div>
+    </div>
+
+    <button id="openModalBtn">Buka Modal</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Masukkan Biodata</h2>
+            <form id="biodataForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <label for="umur">Umur:</label>
+                <input type="number" id="umur" name="umur" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
